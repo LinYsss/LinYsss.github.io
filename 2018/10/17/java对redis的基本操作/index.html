@@ -7,17 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="java对redis的基本操作一、server端安装 　　1、下载 　　　　https://github.com/MSOpenTech/redis 　　　　可看到当前可下载版本：redis2.6 　　　　 　　　　下载windows平台文件： 　　　　 　　　　　 　　　　　解压后，选择当前64位win7系统对应的版本： 　　　　　 　　2、安装 　　　　1）解压后将里面所有文件拷贝至redis安">
+  <meta name="description" content="java对redis的基本操作一、server端安装 　　1、下载 　　2、安装 　　　　1）解压后将里面所有文件拷贝至redis安装目录：　　 　　　　　几个exe程序的功能：　　　　 　　　　　   redis-benchmark.exe：性能测试，用以模拟同时由N个客户端发送M个 SETs/GETs 查询 (类似于 Apache 的ab 工具).    　　　　　redis-check-ao">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2018/10/17/New Document/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/10/17/java对redis的基本操作/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="java对redis的基本操作一、server端安装 　　1、下载 　　　　https://github.com/MSOpenTech/redis 　　　　可看到当前可下载版本：redis2.6 　　　　 　　　　下载windows平台文件： 　　　　 　　　　　 　　　　　解压后，选择当前64位win7系统对应的版本： 　　　　　 　　2、安装 　　　　1）解压后将里面所有文件拷贝至redis安">
+<meta property="og:description" content="java对redis的基本操作一、server端安装 　　1、下载 　　2、安装 　　　　1）解压后将里面所有文件拷贝至redis安装目录：　　 　　　　　几个exe程序的功能：　　　　 　　　　　   redis-benchmark.exe：性能测试，用以模拟同时由N个客户端发送M个 SETs/GETs 查询 (类似于 Apache 的ab 工具).    　　　　　redis-check-ao">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-17T08:47:40.536Z">
+<meta property="og:updated_time" content="2018-10-17T08:59:25.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="java对redis的基本操作一、server端安装 　　1、下载 　　　　https://github.com/MSOpenTech/redis 　　　　可看到当前可下载版本：redis2.6 　　　　 　　　　下载windows平台文件： 　　　　 　　　　　 　　　　　解压后，选择当前64位win7系统对应的版本： 　　　　　 　　2、安装 　　　　1）解压后将里面所有文件拷贝至redis安">
+<meta name="twitter:description" content="java对redis的基本操作一、server端安装 　　1、下载 　　2、安装 　　　　1）解压后将里面所有文件拷贝至redis安装目录：　　 　　　　　几个exe程序的功能：　　　　 　　　　　   redis-benchmark.exe：性能测试，用以模拟同时由N个客户端发送M个 SETs/GETs 查询 (类似于 Apache 的ab 工具).    　　　　　redis-check-ao">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,9 +64,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-New Document" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-java对redis的基本操作" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/10/17/New Document/" class="article-date">
+    <a href="/2018/10/17/java对redis的基本操作/" class="article-date">
   <time datetime="2018-10-17T08:47:40.534Z" itemprop="datePublished">2018-10-17</time>
 </a>
     
@@ -78,17 +78,8 @@
       
         <p>java对redis的基本操作<br>一、server端安装</p>
 <p>　　1、下载</p>
-<p>　　　　<a href="https://github.com/MSOpenTech/redis" target="_blank" rel="noopener">https://github.com/MSOpenTech/redis</a></p>
-<p>　　　　可看到当前可下载版本：redis2.6</p>
-<p>　　　　</p>
-<p>　　　　下载windows平台文件：</p>
-<p>　　　　</p>
-<p>　　　　　</p>
-<p>　　　　　解压后，选择当前64位win7系统对应的版本：</p>
-<p>　　　　　</p>
 <p>　　2、安装</p>
-<p>　　　　1）解压后将里面所有文件拷贝至redis安装目录：</p>
-<p>　　　　　</p>
+<p>　　　　1）解压后将里面所有文件拷贝至redis安装目录：　　</p>
 <p>　　　　　几个exe程序的功能：　　　　</p>
 <p>　　　　　   redis-benchmark.exe：性能测试，用以模拟同时由N个客户端发送M个 SETs/GETs 查询 (类似于 Apache 的ab 工具).</p>
 <p>   　　　　　redis-check-aof.exe：更新日志检查</p>
@@ -96,29 +87,18 @@
 <p>  　　　　　redis-cli.exe：客户端<br>   　　　　　redis-server.exe：服务端　　　　　　 </p>
 <p>　　　　2）将路径添加至系统环境变量：过程略</p>
 <p>　　　　3）cmd下启动redis-server</p>
-<p>　　　　</p>
 <p>　　　　注：由于此处未指定配置文件，系统采用默认参数</p>
 <p>　　3、下载对应的配置文件</p>
 <p>　　　　由上面cmd输出可知，当前版本为2.6.12</p>
 <p>　　　　原页面上打开所有发布版本，找到2.6.12：</p>
-<p>　　　　</p>
 <p>　　　　下载zip文件：</p>
-<p>　　　　</p>
 <p>　　　　拷贝出redis.conf配置文件至安装目录：</p>
-<p>　　　　</p>
-<p>　　　　</p>
 <p>　　　　配置文件各字段含义：<a href="http://cardyn.iteye.com/blog/794194" target="_blank" rel="noopener">http://cardyn.iteye.com/blog/794194</a></p>
 <p>　　　　ps:如果配置文件的版本和当前exe程序的版本不匹配，很容易</p>
 <p>　　　　　由于参数不一致导致server端无法启动。</p>
-<p>　　4、通过指定的配置文件启动服务端</p>
-<p>　　　　</p>
-<p>　　5、客户端访问测试</p>
-<p>　　　 另起一个cmd窗口：</p>
-<p>　　　 </p>
-<p>二、基本功能测试</p>
-<p>　　1、程序基本结构</p>
-<p>　　</p>
-<p>　　2、主要类</p>
+<p>　　4、通过指定的配置文件启动服务端<br>　　<br>　　5、客户端访问测试</p>
+<p>　　　 另起一个cmd窗口：<br>　　　<br>二、基本功能测试</p>
+<p>　　1、程序基本结构<br>　<br>　　2、主要类</p>
 <p>　　　　1）功能类</p>
 <p>复制代码<br>package com.redis;</p>
 <p>import java.util.ArrayList;<br>import java.util.Iterator;<br>import java.util.List;<br>import java.util.Set;</p>
@@ -554,7 +534,7 @@ hgetall(key)：返回名称为key的hash中所有的键（field）及其对应�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/17/New Document/" data-id="cjncx805100028gu1uu2m93rw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/17/java对redis的基本操作/" data-id="cjncxe5zv000044u1atykd7ps" class="article-share-link">Share</a>
       
       
     </footer>
@@ -603,7 +583,7 @@ hgetall(key)：返回名称为key的hash中所有的键（field）及其对应�
       <ul>
         
           <li>
-            <a href="/2018/10/17/New Document/">(no title)</a>
+            <a href="/2018/10/17/java对redis的基本操作/">(no title)</a>
           </li>
         
           <li>
